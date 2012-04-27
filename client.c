@@ -94,7 +94,6 @@ int main(int argc, char **argv)
     perror("connect");
 
 
-
 	/* STEP 1: SSL Initialization and server certificate/key validation */
 
  	/* Global system initialization*/

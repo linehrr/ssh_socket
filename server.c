@@ -29,6 +29,12 @@
 
 int main(int argc, char **argv)
 {
+ 
+ pid_t child;
+ child = fork();
+ if(child == -1)exit(1);
+ if(child > 0)exit(0);
+
   int s,r, end, sock, port=PORT;
   struct sockaddr_in sin;
   int val=1;
@@ -110,7 +116,7 @@ int main(int argc, char **argv)
       		
 	// Create new context supporting SSL 3, SSL 2, and TLSv1
      	//sslContext = SSL_CTX_new (SSLv23_server_method()); 	
-	sslContext = SSL_CTX_new (SSLv2_server_method()); 	
+	sslContext = SSL_CTX_new (SSLv23_server_method()); 	
 	
       	if (sslContext == NULL)
         	ERR_print_errors_fp (stderr);

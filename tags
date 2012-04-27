@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC := gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS := -Wall -g$/;"	m
+EMAIL	client.c	215;"	d	file:
+FMT_ACCEPT_ERR	server.c	24;"	d	file:
+FMT_CLIENT_INFO	server.c	25;"	d	file:
+FMT_CN_MISMATCH	client.c	27;"	d	file:
+FMT_CONNECT_ERR	client.c	24;"	d	file:
+FMT_EMAIL_MISMATCH	client.c	28;"	d	file:
+FMT_INCOMPLETE_CLOSE	server.c	27;"	d	file:
+FMT_INCORRECT_CLOSE	client.c	30;"	d	file:
+FMT_NO_VERIFY	client.c	29;"	d	file:
+FMT_OUTPUT	client.c	26;"	d	file:
+FMT_OUTPUT	server.c	26;"	d	file:
+FMT_SERVER_INFO	client.c	25;"	d	file:
+HOST	client.c	20;"	d	file:
+ISSUER	client.c	216;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS := $(LIBS)$/;"	m
+LIBS	Makefile	/^LIBS := -lssl -lcrypto $/;"	m
+PORT	client.c	21;"	d	file:
+PORT	server.c	21;"	d	file:
+RM	Makefile	/^RM := rm -f$/;"	m
+main	client.c	/^int main(int argc, char **argv)$/;"	f
+main	server.c	/^int main(int argc, char **argv)$/;"	f
+sources	Makefile	/^sources := client.c server.c $/;"	m
+targets	Makefile	/^targets := client server $/;"	m
